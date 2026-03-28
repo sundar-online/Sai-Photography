@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery | SAI PHOTOGRAPHY</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="gallery/logo.png">
     <link rel="stylesheet" href="style.css">
     <style>
         .gallery-hero {
             height: 40vh;
-            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('gallery/gallery-1.png') center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('gallery/gallery-1.png') center/cover;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
         }
+
         .gallery-filter {
             display: flex;
             justify-content: center;
@@ -22,9 +25,10 @@
             margin-bottom: 50px;
             flex-wrap: wrap;
         }
+
         .filter-btn {
             background: transparent;
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             color: #fff;
             padding: 0.8rem 1.8rem;
             cursor: pointer;
@@ -33,15 +37,19 @@
             font-size: 0.75rem;
             transition: var(--transition-smooth);
         }
-        .filter-btn:hover, .filter-btn.active {
+
+        .filter-btn:hover,
+        .filter-btn.active {
             border-color: var(--accent-gold);
             color: var(--accent-gold);
         }
+
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
         }
+
         .gallery-item {
             position: relative;
             overflow: hidden;
@@ -49,34 +57,43 @@
             aspect-ratio: 4/5;
             cursor: pointer;
         }
+
         .gallery-item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.8s ease;
         }
+
         .gallery-item:hover img {
             transform: scale(1.1);
         }
+
         .gallery-overlay {
             position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.6);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
             display: flex;
             align-items: center;
             justify-content: center;
             opacity: 0;
             transition: var(--transition-smooth);
         }
+
         .gallery-overlay i {
             color: var(--accent-gold);
             font-size: 2rem;
             transform: scale(0.5);
             transition: var(--transition-smooth);
         }
+
         .gallery-item:hover .gallery-overlay {
             opacity: 1;
         }
+
         .gallery-item:hover .gallery-overlay i {
             transform: scale(1);
         }
@@ -85,33 +102,41 @@
         #lightbox {
             position: fixed;
             z-index: 2000;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.95);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
             display: none;
             align-items: center;
             justify-content: center;
             padding: 40px;
         }
+
         #lightbox img {
             max-width: 90%;
             max-height: 80vh;
             border: 1px solid var(--border-color);
         }
+
         #lightbox .close {
             position: absolute;
-            top: 40px; right: 40px;
+            top: 40px;
+            right: 40px;
             color: #fff;
             font-size: 2.5rem;
             cursor: pointer;
         }
     </style>
 </head>
+
 <body>
 
     <!-- Navigation -->
     <nav class="sticky">
         <div class="container">
-            <a href="index.html" class="logo"><img src="gallery/logo.png" alt="Sai Photography" class="logo-img">SAI <span>PHOTOGRAPHY</span></a>
+            <a href="index.html" class="logo"><img src="gallery/logo.png" alt="Sai Photography" class="logo-img">SAI
+                <span>PHOTOGRAPHY</span></a>
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
@@ -128,7 +153,8 @@
 
     <section class="gallery-hero">
         <div class="container">
-            <p style="text-transform: uppercase; letter-spacing: 5px; color: var(--accent-gold); margin-bottom: 10px;">Our Portfolio</p>
+            <p style="text-transform: uppercase; letter-spacing: 5px; color: var(--accent-gold); margin-bottom: 10px;">
+                Our Portfolio</p>
             <h1 style="font-size: 3.5rem;">VISUAL JOURNEY</h1>
         </div>
     </section>
@@ -246,4 +272,5 @@
     </script>
     <script src="script.js"></script>
 </body>
+
 </html>

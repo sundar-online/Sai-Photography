@@ -1,71 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | SAI PHOTOGRAPHY</title>
+    <link rel="icon" href="gallery/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <style>
         .about-hero {
             height: 60vh;
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('gallery/about-philosophy.png') center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('gallery/about-philosophy.png') center/cover;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
         }
+
         .about-grid {
             display: grid;
             grid-template-columns: 1fr 1.2fr;
             gap: 60px;
             align-items: center;
         }
+
         .about-image {
             position: relative;
             border: 2px solid var(--accent-gold);
             padding: 15px;
         }
+
         .about-image img {
             width: 100%;
             height: auto;
             border: 1px solid var(--accent-gold);
         }
+
         .about-content h2 {
             font-size: 2.8rem;
             margin-bottom: 25px;
         }
+
         .about-content p {
             font-size: 1.1rem;
             color: var(--text-secondary);
             margin-bottom: 30px;
         }
+
         .feature-list {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
             margin-top: 30px;
         }
+
         .feature-item {
             display: flex;
             align-items: center;
             gap: 15px;
         }
+
         .feature-item i {
             color: var(--accent-gold);
             font-size: 1.2rem;
         }
+
         @media (max-width: 900px) {
-            .about-grid { grid-template-columns: 1fr; }
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <!-- Navigation -->
     <nav class="sticky">
         <div class="container">
-            <a href="index.html" class="logo"><img src="gallery/logo.png" alt="Sai Photography" class="logo-img">SAI <span>PHOTOGRAPHY</span></a>
+            <a href="index.html" class="logo"><img src="gallery/logo.png" alt="Sai Photography" class="logo-img">SAI
+                <span>PHOTOGRAPHY</span></a>
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="about.html" class="active">About</a>
@@ -82,7 +97,8 @@
 
     <section class="about-hero">
         <div class="container">
-            <p style="text-transform: uppercase; letter-spacing: 5px; color: var(--accent-gold); margin-bottom: 10px;">The Artist Behind the Lens</p>
+            <p style="text-transform: uppercase; letter-spacing: 5px; color: var(--accent-gold); margin-bottom: 10px;">
+                The Artist Behind the Lens</p>
             <h1 style="font-size: 3.5rem;">OUR STORY</h1>
         </div>
     </section>
@@ -94,15 +110,21 @@
                     <img src="gallery/photographer.png" alt="Sundaramoorthy">
                 </div>
                 <div class="about-content">
-                    <p style="text-transform: uppercase; letter-spacing: 2px; color: var(--accent-gold); margin-bottom: 15px;">Meet Sundaramoorthy</p>
+                    <p
+                        style="text-transform: uppercase; letter-spacing: 2px; color: var(--accent-gold); margin-bottom: 15px;">
+                        Meet Sundaramoorthy</p>
                     <h2>Passionate <span class="accent-text">Photographer</span> Capturing Emotions</h2>
                     <p>
-                        With over 8 years of professional experience, I believe that photography is more than just taking pictures; it's about telling a story and preserving a moment that will never happen again. My approach is rooted in honesty, creativity, and a deep appreciation for the beauty found in real emotions.
+                        With over 8 years of professional experience, I believe that photography is more than just
+                        taking pictures; it's about telling a story and preserving a moment that will never happen
+                        again. My approach is rooted in honesty, creativity, and a deep appreciation for the beauty
+                        found in real emotions.
                     </p>
                     <p>
-                        Based in the beautiful landscapes of Southern India, I bring a cinematic touch to every shoot, whether it's the grandeur of a wedding or the intimate moments of a baby session.
+                        Based in the beautiful landscapes of Southern India, I bring a cinematic touch to every shoot,
+                        whether it's the grandeur of a wedding or the intimate moments of a baby session.
                     </p>
-                    
+
                     <div class="feature-list">
                         <div class="feature-item">
                             <i class="fas fa-check-circle"></i>
@@ -122,7 +144,8 @@
                         </div>
                     </div>
 
-                    <div style="margin-top: 40px; padding: 25px; border-left: 3px solid var(--accent-gold); background: var(--bg-secondary);">
+                    <div
+                        style="margin-top: 40px; padding: 25px; border-left: 3px solid var(--accent-gold); background: var(--bg-secondary);">
                         <h4 style="margin-bottom: 10px; color: var(--accent-gold);">Service Locations</h4>
                         <p style="margin-bottom: 0;">Avudaiyarkovil | Karaikudi | Aranthangi</p>
                     </div>
@@ -136,8 +159,10 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <div class="logo" style="margin-bottom: 30px;"><img src="gallery/logo.png" alt="Sai Photography Logo" class="logo-img">SAI <span>PHOTOGRAPHY</span></div>
-                    <p>Capturing real emotions and timeless memories since 2015. We specialize in luxury cinematic photography that speaks for itself.</p>
+                    <div class="logo" style="margin-bottom: 30px;"><img src="gallery/logo.png"
+                            alt="Sai Photography Logo" class="logo-img">SAI <span>PHOTOGRAPHY</span></div>
+                    <p>Capturing real emotions and timeless memories since 2015. We specialize in luxury cinematic
+                        photography that speaks for itself.</p>
                 </div>
                 <div class="footer-col">
                     <h4>Quick Links</h4>
@@ -162,4 +187,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

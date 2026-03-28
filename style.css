@@ -172,7 +172,8 @@ nav .container {
   width: 60px;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid var(--accent-gold);
+  border: 2px solid var(--accent-gold);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
   transition: var(--transition-smooth);
 }
 
