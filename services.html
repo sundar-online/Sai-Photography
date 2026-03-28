@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | SAI PHOTOGRAPHY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .services-hero {
+            height: 50vh;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('gallery/event-thumb.png') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .service-list-item {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+            margin-bottom: 150px;
+        }
+        .service-list-item:nth-child(even) {
+            direction: rtl;
+        }
+        .service-list-item:nth-child(even) .service-text {
+            direction: ltr;
+        }
+        .service-list-item:last-child {
+            margin-bottom: 0;
+        }
+        .service-img-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+            width: 100%;
+            height: 500px;
+        }
+        .service-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1s ease;
+        }
+        .service-img-container:hover img {
+            transform: scale(1.1);
+        }
+        .service-text h3 {
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+            color: #fff;
+            letter-spacing: 2px;
+        }
+        .service-text p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+        .service-text ul {
+            margin-bottom: 40px;
+        }
+        .service-text ul li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .service-text ul li i {
+            color: var(--accent-gold);
+        }
+        @media (max-width: 900px) {
+            .service-list-item, .service-list-item:nth-child(even) {
+                grid-template-columns: 1fr;
+                direction: ltr;
+                gap: 40px;
+                margin-bottom: 80px;
+            }
+            .service-img-container { height: 350px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="sticky">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="gallery/logo.png" alt="Sai Photography" class="logo-img">SAI <span>PHOTOGRAPHY</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="mobile-nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="services-hero">
+        <div class="container">
+            <p style="text-transform: uppercase; letter-spacing: 5px; color: var(--accent-gold); margin-bottom: 10px;">Our Specializations</p>
+            <h1 style="font-size: 3.5rem;">CRAFTED EXPERIENCES</h1>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <!-- Wedding Photography -->
+            <div class="service-list-item">
+                <div class="service-img-container">
+                    <img src="gallery/wedding-thumb.png" alt="Wedding Photography">
+                </div>
+                <div class="service-text">
+                    <p style="color: var(--accent-gold); letter-spacing: 3px; font-weight: 500; margin-bottom: 15px;">#01 WEDDING</p>
+                    <h3>Wedding Photography</h3>
+                    <p>Capturing the grandeur and the intimate details of your big day. From candid emotions to the traditional rituals, we ensure every moment is immortalized.</p>
+                    <ul>
+                        <li><i class="fas fa-camera"></i> Candid & Traditional Photography</li>
+                        <li><i class="fas fa-video"></i> Cinematic Wedding Films</li>
+                        <li><i class="fas fa-book"></i> Premium Quality Wedding Albums</li>
+                        <li><i class="fas fa-certificate"></i> Drone & Aerial Coverage</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline">Enquire Now</a>
+                </div>
+            </div>
+
+            <!-- Event Shoot -->
+            <div class="service-list-item">
+                <div class="service-img-container">
+                    <img src="gallery/event-thumb.png" alt="Event Shoot">
+                </div>
+                <div class="service-text">
+                    <p style="color: var(--accent-gold); letter-spacing: 3px; font-weight: 500; margin-bottom: 15px;">#02 EVENTS</p>
+                    <h3>Event Shoots</h3>
+                    <p>Whether it's a corporate seminar, a social gala, or a family gathering, our event coverage is comprehensive and professional.</p>
+                    <ul>
+                        <li><i class="fas fa-camera"></i> Multi-angle coverage</li>
+                        <li><i class="fas fa-bolt"></i> Fast photo delivery</li>
+                        <li><i class="fas fa-film"></i> Event highlight videos</li>
+                        <li><i class="fas fa-users"></i> Large group portraiture</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline">Get a Quote</a>
+                </div>
+            </div>
+
+            <!-- Baby Shoot -->
+            <div class="service-list-item">
+                <div class="service-img-container">
+                    <img src="gallery/baby-thumb.png" alt="Baby Shoot">
+                </div>
+                <div class="service-text">
+                    <p style="color: var(--accent-gold); letter-spacing: 3px; font-weight: 500; margin-bottom: 15px;">#03 BABYCARE</p>
+                    <h3>Baby & Maternity Shoots</h3>
+                    <p>Tender moments of new life captured with a soft and patient touch. We create a comfortable environment for your little ones to shine.</p>
+                    <ul>
+                        <li><i class="fas fa-baby"></i> Newborn & Toddler sessions</li>
+                        <li><i class="fas fa-female"></i> Elegant Maternity shoots</li>
+                        <li><i class="fas fa-heart"></i> Sibling and family interactions</li>
+                        <li><i class="fas fa-magic"></i> Creative setups and themes</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline">Book Session</a>
+                </div>
+            </div>
+
+            <!-- Photo Frames & Decoration -->
+            <div class="service-list-item">
+                <div class="service-img-container">
+                    <img src="gallery/framing-thumb.png" alt="Frames & Decoration">
+                </div>
+                <div class="service-text">
+                    <p style="color: var(--accent-gold); letter-spacing: 3px; font-weight: 500; margin-bottom: 15px;">#04 PREMIUM</p>
+                    <h3>Frames & Decorations</h3>
+                    <p>We provide exclusive photo framing services and stunning birthday decorations that elevate your celebrations and preserve your prints.</p>
+                    <ul>
+                        <li><i class="fas fa-border-all"></i> Luxury Teak & Synthetic Frames</li>
+                        <li><i class="fas fa-birthday-cake"></i> Themed Birthday Decorations</li>
+                        <li><i class="fas fa-magic"></i> Personalized Gifts</li>
+                        <li><i class="fas fa-palette"></i> Professional Photo Finishing</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="margin-bottom: 30px;"><img src="gallery/logo.png" alt="Sai Photography Logo" class="logo-img">SAI <span>PHOTOGRAPHY</span></div>
+                    <p>Capturing real emotions and timeless memories since 2015. We specialize in luxury cinematic photography that speaks for itself.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col contact-info">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Avudaiyarkovil, Aranthangi, Karaikudi</p>
+                    <p><i class="fas fa-phone"></i> +91 97877 22324</p>
+                    <p><i class="fas fa-envelope"></i> info@saiphotography.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">&copy; 2026 SAI PHOTOGRAPHY. All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
