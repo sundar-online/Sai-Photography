@@ -150,7 +150,7 @@
                 <a href="about.html">About</a>
                 <a href="services.html">Services</a>
                 <a href="gallery.html">Gallery</a>
-                <a href="pricing.html">Pricing</a>
+                <a href="pricing.html">Package</a>
                 <a href="contact.html" class="active">Contact</a>
             </div>
             <div class="mobile-nav-toggle">
@@ -182,21 +182,21 @@
                         <i class="fas fa-phone-alt"></i>
                         <div>
                             <h4>Call Us</h4>
-                            <p>Primary: +91 98765 43210<br>Office: +91 4333 22110</p>
+                            <p>Primary: +91 80729 74957<br>Office: +91 80729 74957</p>
                         </div>
                     </div>
                     <div class="contact-info-item">
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4>Email Us</h4>
-                            <p>info@saiphotography.com<br>support@saiphotography.com</p>
+                            <p>saidhivakar24@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-info-item">
                         <i class="fab fa-whatsapp"></i>
                         <div>
                             <h4>WhatsApp</h4>
-                            <p>Instant chat: +91 98765 43210</p>
+                            <p>Instant chat: +91 80729 74957</p>
                         </div>
                     </div>
                 </div>
@@ -247,10 +247,10 @@
             <div class="social-wrap">
                 <h3 style="letter-spacing: 4px; text-transform: uppercase;">Connect on Social Media</h3>
                 <div class="social-large">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/sai_photography_offl/"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="https://wa.me/918072974957"><i class="fab fa-whatsapp"></i></a>
+
                 </div>
             </div>
         </div>
@@ -272,14 +272,14 @@
                         <li><a href="about.html">About</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="pricing.html">Package</a></li>
                     </ul>
                 </div>
                 <div class="footer-col contact-info">
                     <h4>Contact Us</h4>
                     <p><i class="fas fa-map-marker-alt"></i> Avudaiyarkovil, Aranthangi, Karaikudi</p>
-                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
-                    <p><i class="fas fa-envelope"></i> info@saiphotography.com</p>
+                    <p><i class="fas fa-phone"></i> +91 80729 74957</p>
+                    <p><i class="fas fa-envelope"></i> saidhivakar24@gmail.com</p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -307,7 +307,7 @@
             const eventDate = document.getElementById('date').value;
             const message = document.getElementById('message').value;
 
-            const waNumber = "919787722324";
+            const waNumber = "918072974957";
             const waMessage = `Hello Sai Photography,
 I would like to book a service.
 
@@ -318,7 +318,8 @@ Date: ${eventDate}
 Message: ${message}`;
 
             const encodedMessage = encodeURIComponent(waMessage);
-            const waLink = `https://wa.me/${waNumber}?text=${encodedMessage}`;
+            // Universal dispatcher link (Best for Laptops and Mobiles)
+            const waLink = `https://api.whatsapp.com/send?phone=${waNumber}&text=${encodedMessage}`;
 
             // Success feedback delay
             setTimeout(() => {
@@ -327,10 +328,16 @@ Message: ${message}`;
                 btn.style.backgroundColor = '#28a745';
 
                 // Alert first if needed, as requested "mesage sent"
-                alert('Success! Your booking details have been captured. Redirecting to WhatsApp now...');
+                alert('Success! Your details have been captured. Opening WhatsApp chat now...');
 
-                // Open WhatsApp
-                window.open(waLink, '_blank');
+                // Open WhatsApp in a new window/tab
+                const win = window.open(waLink, '_blank');
+                if (win) {
+                    win.focus();
+                } else {
+                    // Fallback for pop-up blockers
+                    window.location.href = waLink;
+                }
 
                 // Reset button after 3 seconds
                 setTimeout(() => {

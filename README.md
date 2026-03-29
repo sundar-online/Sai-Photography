@@ -11,10 +11,10 @@ Welcome to the premium cinematic photography website for SAI PHOTOGRAPHY.
 
 ## Pages
 - `index.html`: Home page with hero section and service highlights.
-- `about.html`: Detailed creator profile for Sundaramoorthy.
+- `about.html`: Detailed creator profile for Dhivan.
 - `services.html`: Extensive list of services including wedding, baby, and event shoots.
 - `gallery.html`: Filterable portfolio with a built-in lightbox preview.
-- `pricing.html`: Premium pricing cards for various packages.
+- `pricing.html`: Premium package cards for various events.
 - `contact.html`: Multi-channel contact options (form, WhatsApp, social links).
 
 ## Assets used
@@ -27,4 +27,4 @@ Welcome to the premium cinematic photography website for SAI PHOTOGRAPHY.
 2. Custom scripts are in `script.js`.
 3. Global styles are in `style.css`.
 
-Designed by Antigravity AI for Sundaramoorthy.
+Designed by Antigravity AI for Dhivan.
